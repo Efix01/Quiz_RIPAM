@@ -231,8 +231,13 @@ export default function Simulation() {
                     <div className="sim-progress-bar__fill" style={{ width: `${progress}%` }} />
                 </div>
 
-                {/* Question */}
+                {/* Question and Reference Text */}
                 <div className="sim-question-wrap animate-fade-in-up">
+                    {q.referenceText && (
+                        <div className="sim-reference-text" style={{ padding: 'var(--space-md)', background: 'var(--color-surface-hover)', borderRadius: 'var(--radius-lg)', marginBottom: 'var(--space-md)', fontSize: '0.95rem', fontStyle: 'italic', borderLeft: '4px solid var(--color-accent-gold)' }}>
+                            {q.referenceText}
+                        </div>
+                    )}
                     <div className="sim-question">
                         <p className="sim-question__text">{q.question}</p>
                     </div>

@@ -11,6 +11,7 @@ import {
     Shield,
     ChevronRight,
     AlertTriangle,
+    Crown,
 } from 'lucide-react'
 import './Profile.css'
 
@@ -47,6 +48,26 @@ function Profile() {
         window.location.reload()
     }
 
+    const toggleSubscriptionTier = () => {
+        const storedUsers = JSON.parse(localStorage.getItem('ripam_users') || '{}');
+        const userData = storedUsers[user.email];
+
+        if (userData) {
+            const newTier = user.subscriptionTier === 'free' ? 'pro' : 'free';
+            userData.subscriptionTier = newTier;
+            storedUsers[user.email] = userData;
+            localStorage.setItem('ripam_users', JSON.stringify(storedUsers));
+
+            // Aggiorna anche l'utente corrente mock
+            const currentUser = JSON.parse(localStorage.getItem('ripam_user') || '{}');
+            currentUser.subscriptionTier = newTier;
+            localStorage.setItem('ripam_user', JSON.stringify(currentUser));
+
+            // Reload per forzare l'aggiornamento (mock veloce, in realta' useresti setUser dal context)
+            window.location.reload();
+        }
+    }
+
     return (
         <div className="profile-page">
             {/* Header con avatar */}
@@ -59,6 +80,11 @@ function Profile() {
                         <span className="badge badge-gold">{selectedProfile.name}</span>
                     </div>
                 )}
+                <div style={{ marginTop: 'var(--space-sm)' }}>
+                    <span className={`badge ${user.subscriptionTier === 'pro' ? 'badge-blue' : 'badge-neutral'}`}>
+                        {user.subscriptionTier === 'pro' ? '👑 PRO' : '🆓 FREE'}
+                    </span>
+                </div>
             </div>
 
             {/* Sezione Concorso */}
@@ -76,6 +102,28 @@ function Profile() {
                             <div className="profile-row__label">Profilo concorso</div>
                             <div className="profile-row__sublabel">
                                 {selectedProfile ? selectedProfile.name : 'Non selezionato'}
+                            </div>
+                        </div>
+                        <ChevronRight size={18} className="profile-row__chevron" />
+                    </button>
+                </div>
+            </div>
+
+            {/* Sezione Sviluppatore / Tester */}
+            <div className="profile-section stagger-children">
+                <div className="profile-section__title">Testing (Mock)</div>
+                <div className="profile-section__card">
+                    <button
+                        className="profile-row"
+                        onClick={toggleSubscriptionTier}
+                    >
+                        <div className={`profile-row__icon ${user.subscriptionTier === 'pro' ? 'profile-row__icon--gold' : 'profile-row__icon--blue'}`}>
+                            <Crown size={18} />
+                        </div>
+                        <div className="profile-row__content">
+                            <div className="profile-row__label">Cambia Piano (Free ↔ Pro)</div>
+                            <div className="profile-row__sublabel">
+                                Clicca per sbloccare/bloccare l'app
                             </div>
                         </div>
                         <ChevronRight size={18} className="profile-row__chevron" />

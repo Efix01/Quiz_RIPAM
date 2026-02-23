@@ -298,6 +298,13 @@ function StudyMode() {
                     </span>
                 )}
 
+                {/* Testo di Riferimento (Brano) */}
+                {currentQuestion.referenceText && (
+                    <div className="quiz-reference-text" style={{ padding: 'var(--space-md)', background: 'var(--color-surface-hover)', borderRadius: 'var(--radius-lg)', marginBottom: 'var(--space-md)', fontSize: '0.95rem', fontStyle: 'italic', borderLeft: '4px solid var(--color-accent-gold)' }}>
+                        {currentQuestion.referenceText}
+                    </div>
+                )}
+
                 {/* Domanda */}
                 <div className="quiz-card__question">
                     {currentQuestion.question}

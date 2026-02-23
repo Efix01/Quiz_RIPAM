@@ -25,6 +25,7 @@ export interface QuizQuestion {
     category: string;               // materia (es. "Diritto amministrativo")
     subcategory?: string;
     questionType: QuestionType;
+    referenceText?: string;         // Testo/Brano di riferimento (per logica/ragionamento verbale)
     question: string;
     options: Record<string, string>; // {A: "...", B: "...", C: "...", D: "..."}
     correctAnswer?: string;         // per knowledge/logic (es. "A")
