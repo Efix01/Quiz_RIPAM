@@ -1,0 +1,869 @@
+[
+    {
+        "id": 1,
+        "profileId": null,
+        "category": "Diritto amministrativo",
+        "questionType": "knowledge",
+        "question": "Quale legge disciplina il procedimento amministrativo e il diritto di accesso ai documenti amministrativi?",
+        "options": {
+            "A": "Legge 241/1990",
+            "B": "D.Lgs. 165/2001",
+            "C": "D.Lgs. 82/2005",
+            "D": "Legge 400/1988"
+        },
+        "correctAnswer": "A",
+        "explanation": "La Legge 7 agosto 1990 n. 241 è la normativa fondamentale che disciplina il procedimento amministrativo e il diritto di accesso ai documenti.",
+        "source": "L. 241/1990",
+        "difficulty": 2
+    },
+    {
+        "id": 2,
+        "profileId": null,
+        "category": "Diritto amministrativo",
+        "questionType": "knowledge",
+        "question": "Il silenzio-assenso si forma quando la Pubblica Amministrazione non comunica il provvedimento entro:",
+        "options": {
+            "A": "15 giorni",
+            "B": "30 giorni",
+            "C": "Il termine previsto dalla legge o dal regolamento",
+            "D": "90 giorni"
+        },
+        "correctAnswer": "C",
+        "explanation": "Il silenzio-assenso (art. 20 L. 241/1990) si forma quando la PA non comunica il provvedimento nel termine previsto dalla legge o dal regolamento per il procedimento specifico.",
+        "source": "Art. 20 L. 241/1990",
+        "difficulty": 3
+    },
+    {
+        "id": 3,
+        "profileId": null,
+        "category": "Diritto amministrativo",
+        "questionType": "knowledge",
+        "question": "L'autotutela amministrativa consente alla PA di:",
+        "options": {
+            "A": "Delegare i propri compiti a privati",
+            "B": "Annullare o revocare i propri atti",
+            "C": "Emettere sanzioni penali",
+            "D": "Stipulare contratti senza gara"
+        },
+        "correctAnswer": "B",
+        "explanation": "L'autotutela è il potere della PA di riesaminare i propri atti e, se necessario, annullarli d'ufficio (art. 21-nonies) o revocarli (art. 21-quinquies).",
+        "source": "Art. 21-nonies e 21-quinquies L. 241/1990",
+        "difficulty": 2
+    },
+    {
+        "id": 4,
+        "profileId": null,
+        "category": "Diritto amministrativo",
+        "questionType": "knowledge",
+        "question": "L'annullamento d'ufficio di un provvedimento amministrativo illegittimo può avvenire entro:",
+        "options": {
+            "A": "6 mesi",
+            "B": "12 mesi dall'adozione del provvedimento",
+            "C": "24 mesi",
+            "D": "Senza limiti di tempo"
+        },
+        "correctAnswer": "B",
+        "explanation": "L'art. 21-nonies L. 241/1990 prevede che l'annullamento d'ufficio debba avvenire entro 12 mesi dall'adozione del provvedimento (termine introdotto dalla L. 124/2015).",
+        "source": "Art. 21-nonies L. 241/1990",
+        "difficulty": 3
+    },
+    {
+        "id": 5,
+        "profileId": null,
+        "category": "Diritto penale PA",
+        "questionType": "knowledge",
+        "question": "Il reato di peculato (art. 314 c.p.) si configura quando il pubblico ufficiale:",
+        "options": {
+            "A": "Riceve una tangente",
+            "B": "Si appropria di denaro o cose mobili di cui ha il possesso per ragioni d'ufficio",
+            "C": "Omette un atto del suo ufficio",
+            "D": "Falsifica un documento pubblico"
+        },
+        "correctAnswer": "B",
+        "explanation": "Il peculato consiste nell'appropriazione di denaro o altra cosa mobile altrui di cui il soggetto ha il possesso o la disponibilità per ragione del suo ufficio o servizio.",
+        "source": "Art. 314 c.p.",
+        "difficulty": 2
+    },
+    {
+        "id": 6,
+        "profileId": null,
+        "category": "Diritto penale PA",
+        "questionType": "knowledge",
+        "question": "Il reato di corruzione per l'esercizio della funzione (art. 318 c.p.) punisce:",
+        "options": {
+            "A": "Solo chi riceve il denaro",
+            "B": "Solo chi offre il denaro",
+            "C": "Sia il pubblico ufficiale che riceve sia il privato che offre",
+            "D": "Solo il superiore gerarchico"
+        },
+        "correctAnswer": "C",
+        "explanation": "La corruzione è un reato a concorso necessario: punisce sia il corrotto (pubblico ufficiale) che il corruttore (privato).",
+        "source": "Art. 318 c.p.",
+        "difficulty": 3
+    },
+    {
+        "id": 7,
+        "profileId": null,
+        "category": "Diritto penale PA",
+        "questionType": "knowledge",
+        "question": "L'abuso d'ufficio (art. 323 c.p.) è stato riformato dalla L. 120/2020. Ora richiede che il pubblico ufficiale violi:",
+        "options": {
+            "A": "Qualsiasi norma di legge",
+            "B": "Specifiche regole di condotta espressamente previste dalla legge",
+            "C": "I principi generali dell'ordinamento",
+            "D": "Solo le circolari ministeriali"
+        },
+        "correctAnswer": "B",
+        "explanation": "Dopo la riforma del 2020, l'abuso d'ufficio richiede la violazione di specifiche regole di condotta espressamente previste dalla legge, da cui non residuino margini di discrezionalità.",
+        "source": "Art. 323 c.p. (modificato da L. 120/2020)",
+        "difficulty": 4
+    },
+    {
+        "id": 8,
+        "profileId": null,
+        "category": "Codice dell'Amministrazione Digitale",
+        "questionType": "knowledge",
+        "question": "Il Codice dell'Amministrazione Digitale (CAD) è contenuto nel:",
+        "options": {
+            "A": "D.Lgs. 82/2005",
+            "B": "D.Lgs. 165/2001",
+            "C": "D.P.R. 445/2000",
+            "D": "D.Lgs. 33/2013"
+        },
+        "correctAnswer": "A",
+        "explanation": "Il CAD è stato istituito con il Decreto Legislativo 7 marzo 2005 n. 82 e disciplina la digitalizzazione della Pubblica Amministrazione.",
+        "source": "D.Lgs. 82/2005",
+        "difficulty": 1
+    },
+    {
+        "id": 9,
+        "profileId": null,
+        "category": "Codice dell'Amministrazione Digitale",
+        "questionType": "knowledge",
+        "question": "Quale identità digitale è riconosciuta dal CAD per l'accesso ai servizi della PA?",
+        "options": {
+            "A": "Solo la PEC",
+            "B": "SPID, CIE e CNS",
+            "C": "Solo la firma digitale",
+            "D": "Il codice fiscale elettronico"
+        },
+        "correctAnswer": "B",
+        "explanation": "Il CAD riconosce SPID (Sistema Pubblico di Identità Digitale), CIE (Carta d'Identità Elettronica) e CNS (Carta Nazionale dei Servizi) come strumenti di identificazione.",
+        "source": "Art. 64 D.Lgs. 82/2005",
+        "difficulty": 2
+    },
+    {
+        "id": 10,
+        "profileId": null,
+        "category": "Codice dell'Amministrazione Digitale",
+        "questionType": "knowledge",
+        "question": "Il domicilio digitale per i cittadini residenti in Italia è:",
+        "options": {
+            "A": "L'indirizzo email personale",
+            "B": "L'indirizzo PEC o il domicilio digitale eletto presso l'INAD",
+            "C": "Il profilo SPID",
+            "D": "L'account MyGov"
+        },
+        "correctAnswer": "B",
+        "explanation": "Il domicilio digitale è l'indirizzo PEC o il domicilio digitale eletto dall'utente tramite l'Indice Nazionale dei Domicili Digitali (INAD), come previsto dall'art. 3-bis del CAD.",
+        "source": "Art. 3-bis D.Lgs. 82/2005",
+        "difficulty": 3
+    },
+    {
+        "id": 11,
+        "profileId": null,
+        "category": "Ordinamento del lavoro alle dipendenze della PA",
+        "questionType": "knowledge",
+        "question": "Il D.Lgs. 165/2001 (Testo Unico sul Pubblico Impiego) disciplina:",
+        "options": {
+            "A": "Solo i dirigenti",
+            "B": "L'organizzazione degli uffici e i rapporti di lavoro nella PA",
+            "C": "Solo il personale militare",
+            "D": "Solo i contratti di lavoro autonomo"
+        },
+        "correctAnswer": "B",
+        "explanation": "Il D.Lgs. 165/2001 contiene le norme generali sull'ordinamento del lavoro alle dipendenze delle amministrazioni pubbliche.",
+        "source": "D.Lgs. 165/2001",
+        "difficulty": 1
+    },
+    {
+        "id": 12,
+        "profileId": null,
+        "category": "Ordinamento del lavoro alle dipendenze della PA",
+        "questionType": "knowledge",
+        "question": "Il codice di comportamento dei dipendenti pubblici è previsto:",
+        "options": {
+            "A": "Dal D.P.R. 62/2013",
+            "B": "Dalla Legge 190/2012",
+            "C": "Dal D.Lgs. 33/2013",
+            "D": "Dal D.Lgs. 39/2013"
+        },
+        "correctAnswer": "A",
+        "explanation": "Il D.P.R. 16 aprile 2013 n. 62 contiene il Regolamento recante il codice di comportamento dei dipendenti pubblici.",
+        "source": "D.P.R. 62/2013",
+        "difficulty": 2
+    },
+    {
+        "id": 13,
+        "profileId": null,
+        "category": "Inglese A2",
+        "questionType": "knowledge",
+        "question": "Choose the correct sentence:",
+        "options": {
+            "A": "She don't like coffee.",
+            "B": "She doesn't likes coffee.",
+            "C": "She doesn't like coffee.",
+            "D": "She not like coffee."
+        },
+        "correctAnswer": "C",
+        "explanation": "In inglese, la terza persona singolare negativa si forma con 'doesn't + verbo base' (senza -s sul verbo).",
+        "source": "Grammatica inglese A2",
+        "difficulty": 1
+    },
+    {
+        "id": 14,
+        "profileId": null,
+        "category": "Inglese A2",
+        "questionType": "knowledge",
+        "question": "Complete: 'I _____ to the office every morning at 8.'",
+        "options": {
+            "A": "goes",
+            "B": "going",
+            "C": "go",
+            "D": "am go"
+        },
+        "correctAnswer": "C",
+        "explanation": "Con la prima persona singolare 'I', si usa il verbo alla forma base: 'I go'.",
+        "source": "Grammatica inglese A2",
+        "difficulty": 1
+    },
+    {
+        "id": 15,
+        "profileId": null,
+        "category": "Competenze digitali/ICT",
+        "questionType": "knowledge",
+        "question": "Cosa si intende per 'cloud computing'?",
+        "options": {
+            "A": "Un tipo di hardware per gaming",
+            "B": "L'erogazione di servizi informatici (server, storage, database) tramite Internet",
+            "C": "Un linguaggio di programmazione",
+            "D": "Un sistema operativo"
+        },
+        "correctAnswer": "B",
+        "explanation": "Il cloud computing è la distribuzione di servizi di calcolo come server, archiviazione, database, rete, software tramite Internet ('il cloud').",
+        "source": "Competenze digitali EIPASS/ICDL",
+        "difficulty": 1
+    },
+    {
+        "id": 16,
+        "profileId": null,
+        "category": "Competenze digitali/ICT",
+        "questionType": "knowledge",
+        "question": "L'acronimo PEC sta per:",
+        "options": {
+            "A": "Posta Elettronica Certificata",
+            "B": "Protocollo Elettronico Certificato",
+            "C": "Posta Elettronica Comune",
+            "D": "Protocollo Email Crittografato"
+        },
+        "correctAnswer": "A",
+        "explanation": "PEC sta per Posta Elettronica Certificata, uno strumento giuridico che attribuisce al messaggio email lo stesso valore legale di una raccomandata con ricevuta di ritorno.",
+        "source": "D.P.R. 68/2005",
+        "difficulty": 1
+    },
+    {
+        "id": 17,
+        "profileId": null,
+        "category": "Ragionamento logico",
+        "questionType": "logic",
+        "question": "Se tutti i medici sono laureati, e Marco è un medico, allora:",
+        "options": {
+            "A": "Marco potrebbe non essere laureato",
+            "B": "Marco è sicuramente laureato",
+            "C": "Tutti i laureati sono medici",
+            "D": "Marco è un chirurgo"
+        },
+        "correctAnswer": "B",
+        "explanation": "Questo è un sillogismo categorico: Premessa maggiore: tutti i medici sono laureati. Premessa minore: Marco è un medico. Conclusione necessaria: Marco è laureato.",
+        "difficulty": 1
+    },
+    {
+        "id": 18,
+        "profileId": null,
+        "category": "Ragionamento logico",
+        "questionType": "logic",
+        "question": "Quale numero completa la serie: 2, 6, 18, 54, ___?",
+        "options": {
+            "A": "108",
+            "B": "162",
+            "C": "148",
+            "D": "216"
+        },
+        "correctAnswer": "B",
+        "explanation": "È una progressione geometrica con ragione 3: ogni numero è il triplo del precedente. 54 × 3 = 162.",
+        "difficulty": 2
+    },
+    {
+        "id": 19,
+        "profileId": null,
+        "category": "Ragionamento logico",
+        "questionType": "logic",
+        "question": "'Se piove, allora prendo l'ombrello.' Quale affermazione è logicamente equivalente?",
+        "options": {
+            "A": "Se prendo l'ombrello, allora piove",
+            "B": "Se non piove, non prendo l'ombrello",
+            "C": "Se non prendo l'ombrello, allora non piove",
+            "D": "Se piove, non prendo l'ombrello"
+        },
+        "correctAnswer": "C",
+        "explanation": "La contronominale di 'Se A allora B' è 'Se non B allora non A', che è logicamente equivalente. Le altre opzioni sono l'inversa (A) o la negazione dell'antecedente (B).",
+        "difficulty": 3
+    },
+    {
+        "id": 20,
+        "profileId": null,
+        "category": "Ragionamento logico",
+        "questionType": "logic",
+        "question": "In un ufficio ci sono 30 dipendenti. 20 parlano inglese, 15 parlano francese e 10 parlano entrambe le lingue. Quanti non parlano né inglese né francese?",
+        "options": {
+            "A": "0",
+            "B": "5",
+            "C": "10",
+            "D": "15"
+        },
+        "correctAnswer": "B",
+        "explanation": "Usando il principio di inclusione-esclusione: chi parla almeno una lingua = 20 + 15 - 10 = 25. Quindi 30 - 25 = 5 non parlano nessuna delle due.",
+        "difficulty": 3
+    },
+    {
+        "id": 21,
+        "profileId": null,
+        "category": "Ragionamento logico",
+        "questionType": "logic",
+        "question": "LIBRO sta a PAGINA come ALBERO sta a:",
+        "options": {
+            "A": "Foresta",
+            "B": "Foglia",
+            "C": "Radice",
+            "D": "Legno"
+        },
+        "correctAnswer": "B",
+        "explanation": "La relazione è 'intero-parte': la pagina è una parte del libro, come la foglia è una parte dell'albero.",
+        "difficulty": 1
+    },
+    {
+        "id": 22,
+        "profileId": null,
+        "category": "Ragionamento logico",
+        "questionType": "logic",
+        "question": "Se nessun gatto è un pesce, e alcuni animali domestici sono gatti, allora:",
+        "options": {
+            "A": "Tutti gli animali domestici sono pesci",
+            "B": "Nessun animale domestico è un pesce",
+            "C": "Alcuni animali domestici non sono pesci",
+            "D": "Alcuni pesci sono animali domestici"
+        },
+        "correctAnswer": "C",
+        "explanation": "Se nessun gatto è un pesce e alcuni animali domestici sono gatti, allora quegli specifici animali domestici (che sono gatti) non sono pesci. Possiamo concludere che 'alcuni animali domestici non sono pesci'.",
+        "difficulty": 3
+    },
+    {
+        "id": 23,
+        "profileId": null,
+        "category": "Ragionamento logico",
+        "questionType": "logic",
+        "question": "In una fila di persone, Anna è la quinta da sinistra e la decima da destra. Quante persone ci sono in fila?",
+        "options": {
+            "A": "14",
+            "B": "15",
+            "C": "13",
+            "D": "16"
+        },
+        "correctAnswer": "A",
+        "explanation": "Il totale è: posizione da sinistra + posizione da destra - 1 = 5 + 10 - 1 = 14. Si sottrae 1 perché Anna viene contata due volte.",
+        "difficulty": 2
+    },
+    {
+        "id": 24,
+        "profileId": null,
+        "category": "Situazionale",
+        "questionType": "situational",
+        "question": "Sei un assistente amministrativo e un collega ti chiede di completare urgentemente una pratica che non è di tua competenza, mentre hai già scadenze imminenti. Come ti comporti?",
+        "options": {
+            "A": "Accetti subito, mettendo da parte il tuo lavoro per aiutare il collega",
+            "B": "Spieghi la tua situazione di carico lavorativo e suggerisci di rivolgersi al responsabile per stabilire le priorità",
+            "C": "Rifiuti categoricamente perché non è compito tuo",
+            "D": "Accetti ma poi non fai nulla, sperando che il collega trovi qualcun altro"
+        },
+        "answerScores": {
+            "A": 0.375,
+            "B": 0.75,
+            "C": 0,
+            "D": 0
+        },
+        "explanation": "La risposta più efficace (B) bilancia collaborazione e responsabilità. Coinvolgere il responsabile è la scelta organizzativamente corretta. Accettare senza valutare (A) è parzialmente efficace. Rifiutare o fingere di accettare sono inefficaci.",
+        "difficulty": 2
+    },
+    {
+        "id": 25,
+        "profileId": null,
+        "category": "Situazionale",
+        "questionType": "situational",
+        "question": "Un cittadino si presenta arrabbiato allo sportello lamentando un ritardo nella sua pratica. Come gestisci la situazione?",
+        "options": {
+            "A": "Ascolti con calma, verifichi lo stato della pratica e fornisci informazioni aggiornate e concrete",
+            "B": "Gli dici che non è colpa tua e che deve rivolgersi a un altro ufficio",
+            "C": "Lo inviti a calmarsi con tono autoritario",
+            "D": "Gli prometti che la pratica sarà risolta entro domani, anche se non ne sei sicuro"
+        },
+        "answerScores": {
+            "A": 0.75,
+            "B": 0,
+            "C": 0,
+            "D": 0.375
+        },
+        "explanation": "La risposta più efficace (A) mostra ascolto attivo, professionalità e competenza. Promettere senza certezza (D) è parzialmente efficace. Scaricare la responsabilità (B) o rispondere con autoritarismo (C) sono inefficaci.",
+        "difficulty": 2
+    },
+    {
+        "id": 26,
+        "profileId": null,
+        "category": "Situazionale",
+        "questionType": "situational",
+        "question": "Durante una riunione di team, un collega propone un'idea che tu ritieni poco praticabile. Come reagisci?",
+        "options": {
+            "A": "Esprimi il tuo disaccordo in modo costruttivo, spiegando le criticità e proponendo alternative",
+            "B": "Non dici nulla per evitare conflitti",
+            "C": "Critichi apertamente l'idea definendola 'impossibile'",
+            "D": "Aspetti che la riunione finisca e ne parli con altri colleghi"
+        },
+        "answerScores": {
+            "A": 0.75,
+            "B": 0.375,
+            "C": 0,
+            "D": 0
+        },
+        "explanation": "Esprimere disaccordo costruttivo con alternative (A) è la scelta più efficace in un contesto professionale. Tacere (B) è parzialmente efficace, meglio di criticare (C) o parlare alle spalle (D).",
+        "difficulty": 2
+    },
+    {
+        "id": 27,
+        "profileId": null,
+        "category": "Situazionale",
+        "questionType": "situational",
+        "question": "Scopri che un collega sta usando le risorse dell'ufficio (stampante, carta) in modo eccessivo per scopi personali. Cosa fai?",
+        "options": {
+            "A": "Ne parli direttamente con il collega, facendogli presente educatamente la questione",
+            "B": "Ignori la situazione, non sono affari tuoi",
+            "C": "Segnali immediatamente il comportamento al dirigente",
+            "D": "Cominci anche tu a usare le risorse per scopi personali"
+        },
+        "answerScores": {
+            "A": 0.75,
+            "B": 0,
+            "C": 0.375,
+            "D": 0
+        },
+        "explanation": "Parlare direttamente con il collega (A) è la prima azione più efficace e proporzionata. Segnalare al dirigente (C) è un'opzione, ma sarebbe un'escalation prematura. Ignorare (B) o imitare (D) sono inefficaci.",
+        "difficulty": 2
+    },
+    {
+        "id": 28,
+        "profileId": "AMM",
+        "category": "Contabilità di Stato",
+        "questionType": "knowledge",
+        "question": "Il bilancio dello Stato è approvato:",
+        "options": {
+            "A": "Con decreto del Presidente della Repubblica",
+            "B": "Con legge del Parlamento",
+            "C": "Con delibera del Consiglio dei Ministri",
+            "D": "Con decreto del Ministro dell'Economia"
+        },
+        "correctAnswer": "B",
+        "explanation": "L'art. 81 della Costituzione prevede che le Camere approvino ogni anno i bilanci e il rendiconto consuntivo presentati dal Governo, con legge.",
+        "source": "Art. 81 Cost.",
+        "difficulty": 2
+    },
+    {
+        "id": 29,
+        "profileId": "AMM",
+        "category": "Contabilità di Stato",
+        "questionType": "knowledge",
+        "question": "L'esercizio provvisorio del bilancio dello Stato può essere concesso per un periodo massimo di:",
+        "options": {
+            "A": "Tre mesi",
+            "B": "Quattro mesi",
+            "C": "Sei mesi",
+            "D": "Un anno"
+        },
+        "correctAnswer": "B",
+        "explanation": "L'art. 81, comma 2 della Costituzione prevede che l'esercizio provvisorio del bilancio non possa essere concesso se non per legge e per periodi non superiori complessivamente a quattro mesi.",
+        "source": "Art. 81 Cost.",
+        "difficulty": 3
+    },
+    {
+        "id": 30,
+        "profileId": "AMM",
+        "category": "Diritto dell'Unione Europea",
+        "questionType": "knowledge",
+        "question": "Il Trattato di Lisbona è entrato in vigore nel:",
+        "options": {
+            "A": "2005",
+            "B": "2007",
+            "C": "2009",
+            "D": "2012"
+        },
+        "correctAnswer": "C",
+        "explanation": "Il Trattato di Lisbona, firmato il 13 dicembre 2007, è entrato in vigore il 1° dicembre 2009.",
+        "source": "Trattato di Lisbona",
+        "difficulty": 2
+    },
+    {
+        "id": 31,
+        "profileId": "AMM",
+        "category": "Diritto dell'Unione Europea",
+        "questionType": "knowledge",
+        "question": "Il regolamento dell'Unione Europea è:",
+        "options": {
+            "A": "Vincolante solo per gli Stati che lo recepiscono",
+            "B": "Obbligatorio in tutti i suoi elementi e direttamente applicabile in ciascuno Stato membro",
+            "C": "Una raccomandazione non vincolante",
+            "D": "Vincolante solo quanto al risultato da raggiungere"
+        },
+        "correctAnswer": "B",
+        "explanation": "Il regolamento europeo (art. 288 TFUE) ha portata generale, è obbligatorio in tutti i suoi elementi e direttamente applicabile in ciascuno Stato membro.",
+        "source": "Art. 288 TFUE",
+        "difficulty": 2
+    },
+    {
+        "id": 32,
+        "profileId": "AMM",
+        "category": "Pubblico impiego",
+        "questionType": "knowledge",
+        "question": "Il responsabile del procedimento amministrativo è individuato:",
+        "options": {
+            "A": "Dal TAR competente",
+            "B": "Dal dirigente dell'unità organizzativa competente",
+            "C": "Dal Ministro",
+            "D": "Dal consiglio di Stato"
+        },
+        "correctAnswer": "B",
+        "explanation": "L'art. 5 della L. 241/1990 prevede che il dirigente di ciascuna unità organizzativa nomini il responsabile del procedimento.",
+        "source": "Art. 5 L. 241/1990",
+        "difficulty": 2
+    },
+    {
+        "id": 33,
+        "profileId": "ECO",
+        "category": "Ragioneria generale",
+        "questionType": "knowledge",
+        "question": "La partita doppia prevede che ogni operazione aziendale sia registrata:",
+        "options": {
+            "A": "Solo in Dare",
+            "B": "Solo in Avere",
+            "C": "Contemporaneamente in Dare e in Avere per uguale importo",
+            "D": "Alternativamente in Dare o in Avere"
+        },
+        "correctAnswer": "C",
+        "explanation": "Il principio fondamentale della partita doppia è che ogni operazione viene registrata contemporaneamente in Dare e in Avere per lo stesso importo, garantendo l'equilibrio del bilancio.",
+        "source": "Principi contabili",
+        "difficulty": 1
+    },
+    {
+        "id": 34,
+        "profileId": "ECO",
+        "category": "Ragioneria generale",
+        "questionType": "knowledge",
+        "question": "Lo Stato Patrimoniale rappresenta:",
+        "options": {
+            "A": "I ricavi e i costi di un esercizio",
+            "B": "La situazione patrimoniale e finanziaria a una certa data",
+            "C": "Il flusso di cassa dell'anno",
+            "D": "Solo i debiti dell'azienda"
+        },
+        "correctAnswer": "B",
+        "explanation": "Lo Stato Patrimoniale è un documento che fotografa la situazione patrimoniale e finanziaria dell'azienda a una determinata data (attività, passività e patrimonio netto).",
+        "source": "Art. 2424 c.c.",
+        "difficulty": 1
+    },
+    {
+        "id": 35,
+        "profileId": "ECO",
+        "category": "Economia politica",
+        "questionType": "knowledge",
+        "question": "Il PIL (Prodotto Interno Lordo) misura:",
+        "options": {
+            "A": "Solo il valore dei beni prodotti",
+            "B": "Il valore totale dei beni e servizi finali prodotti in un Paese in un dato periodo",
+            "C": "Solo le esportazioni",
+            "D": "Il reddito dei soli cittadini residenti"
+        },
+        "correctAnswer": "B",
+        "explanation": "Il PIL è il valore totale di tutti i beni e servizi finali prodotti all'interno dei confini di un Paese in un dato periodo di tempo (generalmente un anno).",
+        "source": "Macroeconomia",
+        "difficulty": 1
+    },
+    {
+        "id": 36,
+        "profileId": "ECO",
+        "category": "Economia politica",
+        "questionType": "knowledge",
+        "question": "L'inflazione è definita come:",
+        "options": {
+            "A": "L'aumento del PIL",
+            "B": "La diminuzione del tasso d'interesse",
+            "C": "L'aumento generalizzato e prolungato del livello dei prezzi",
+            "D": "L'aumento della disoccupazione"
+        },
+        "correctAnswer": "C",
+        "explanation": "L'inflazione è l'aumento generalizzato e persistente del livello generale dei prezzi in un'economia, che riduce il potere d'acquisto della moneta.",
+        "source": "Macroeconomia",
+        "difficulty": 1
+    },
+    {
+        "id": 37,
+        "profileId": "ECO",
+        "category": "Economia pubblica",
+        "questionType": "knowledge",
+        "question": "I beni pubblici in economia si caratterizzano per essere:",
+        "options": {
+            "A": "Escludibili e rivali",
+            "B": "Non escludibili e non rivali",
+            "C": "Escludibili e non rivali",
+            "D": "Non escludibili e rivali"
+        },
+        "correctAnswer": "B",
+        "explanation": "I beni pubblici puri sono non escludibili (non si può impedire a nessuno di consumarli) e non rivali (il consumo di uno non riduce la disponibilità per gli altri). Esempio: la difesa nazionale.",
+        "source": "Economia pubblica",
+        "difficulty": 2
+    },
+    {
+        "id": 38,
+        "profileId": "INF",
+        "category": "Programmazione web",
+        "questionType": "knowledge",
+        "question": "In JavaScript, quale keyword dichiara una variabile il cui valore non può essere riassegnato?",
+        "options": {
+            "A": "var",
+            "B": "let",
+            "C": "const",
+            "D": "static"
+        },
+        "correctAnswer": "C",
+        "explanation": "La keyword 'const' dichiara una costante il cui valore non può essere riassegnato dopo l'inizializzazione. 'let' è per variabili riassegnabili, 'var' ha scope di funzione.",
+        "source": "ECMAScript 6+",
+        "difficulty": 1
+    },
+    {
+        "id": 39,
+        "profileId": "INF",
+        "category": "Programmazione web",
+        "questionType": "knowledge",
+        "question": "L'acronimo API sta per:",
+        "options": {
+            "A": "Application Programming Interface",
+            "B": "Advanced Protocol Integration",
+            "C": "Application Protocol Instance",
+            "D": "Automated Programming Instruction"
+        },
+        "correctAnswer": "A",
+        "explanation": "API (Application Programming Interface) è un insieme di definizioni e protocolli per costruire e integrare applicazioni software.",
+        "source": "Informatica generale",
+        "difficulty": 1
+    },
+    {
+        "id": 40,
+        "profileId": "INF",
+        "category": "Database relazionali",
+        "questionType": "knowledge",
+        "question": "In un database relazionale, una chiave primaria (Primary Key):",
+        "options": {
+            "A": "Può contenere valori NULL",
+            "B": "Identifica univocamente ogni riga di una tabella",
+            "C": "Può avere valori duplicati",
+            "D": "È sempre numerica"
+        },
+        "correctAnswer": "B",
+        "explanation": "La chiave primaria identifica univocamente ogni record (riga) di una tabella. Non può contenere NULL e i suoi valori devono essere unici.",
+        "source": "SQL / Database relazionali",
+        "difficulty": 1
+    },
+    {
+        "id": 41,
+        "profileId": "INF",
+        "category": "Database relazionali",
+        "questionType": "knowledge",
+        "question": "Quale clausola SQL viene usata per filtrare i risultati di una query?",
+        "options": {
+            "A": "ORDER BY",
+            "B": "GROUP BY",
+            "C": "WHERE",
+            "D": "HAVING"
+        },
+        "correctAnswer": "C",
+        "explanation": "La clausola WHERE filtra le righe della tabella in base a condizioni specifiche. HAVING filtra dopo il raggruppamento, ORDER BY ordina i risultati, GROUP BY raggruppa.",
+        "source": "SQL",
+        "difficulty": 1
+    },
+    {
+        "id": 42,
+        "profileId": "INF",
+        "category": "Sicurezza informatica",
+        "questionType": "knowledge",
+        "question": "Il phishing è un tipo di attacco informatico che:",
+        "options": {
+            "A": "Danneggia fisicamente l'hardware",
+            "B": "Tenta di ottenere dati sensibili ingannando l'utente",
+            "C": "Rallenta la rete internet",
+            "D": "Cancella i file dal disco"
+        },
+        "correctAnswer": "B",
+        "explanation": "Il phishing è una tecnica di social engineering che utilizza comunicazioni fraudolente (email, SMS, siti web falsi) per indurre la vittima a rivelare informazioni sensibili.",
+        "source": "Sicurezza informatica",
+        "difficulty": 1
+    },
+    {
+        "id": 43,
+        "profileId": "INF",
+        "category": "Sicurezza informatica",
+        "questionType": "knowledge",
+        "question": "Il GDPR (Regolamento UE 2016/679) è entrato in piena applicazione il:",
+        "options": {
+            "A": "1 gennaio 2017",
+            "B": "25 maggio 2018",
+            "C": "1 giugno 2019",
+            "D": "25 maggio 2020"
+        },
+        "correctAnswer": "B",
+        "explanation": "Il GDPR è stato adottato il 27 aprile 2016 ma è divenuto pienamente applicabile il 25 maggio 2018 in tutti gli Stati membri dell'UE.",
+        "source": "Reg. UE 2016/679 (GDPR)",
+        "difficulty": 2
+    },
+    {
+        "id": 44,
+        "profileId": "INF",
+        "category": "Architetture software",
+        "questionType": "knowledge",
+        "question": "L'architettura a microservizi si differenzia dal monolite per:",
+        "options": {
+            "A": "Essere meno scalabile",
+            "B": "Suddividere l'applicazione in servizi indipendenti e autonomi",
+            "C": "Non poter utilizzare database",
+            "D": "Richiedere un solo linguaggio di programmazione"
+        },
+        "correctAnswer": "B",
+        "explanation": "L'architettura a microservizi scompone l'applicazione in servizi piccoli, indipendenti e autonomi, ciascuno con il proprio processo e database, comunicanti tramite API.",
+        "source": "Architetture software",
+        "difficulty": 2
+    },
+    {
+        "id": 45,
+        "profileId": "TEC",
+        "category": "Codice dei contratti pubblici",
+        "questionType": "knowledge",
+        "question": "Il Codice dei contratti pubblici vigente è:",
+        "options": {
+            "A": "D.Lgs. 50/2016",
+            "B": "D.Lgs. 36/2023",
+            "C": "D.Lgs. 163/2006",
+            "D": "D.P.R. 207/2010"
+        },
+        "correctAnswer": "B",
+        "explanation": "Il nuovo Codice dei contratti pubblici è il D.Lgs. 31 marzo 2023 n. 36, entrato in vigore il 1° luglio 2023, che ha sostituito il D.Lgs. 50/2016.",
+        "source": "D.Lgs. 36/2023",
+        "difficulty": 1
+    },
+    {
+        "id": 46,
+        "profileId": "TEC",
+        "category": "Codice dei contratti pubblici",
+        "questionType": "knowledge",
+        "question": "La soglia comunitaria per gli appalti di lavori pubblici è attualmente fissata a:",
+        "options": {
+            "A": "150.000 euro",
+            "B": "750.000 euro",
+            "C": "5.382.000 euro",
+            "D": "1.000.000 euro"
+        },
+        "correctAnswer": "C",
+        "explanation": "La soglia comunitaria per gli appalti di lavori è fissata dal Regolamento UE e periodicamente aggiornata. Per il biennio 2024-2025 è pari a 5.382.000 euro.",
+        "source": "Reg. delegato UE",
+        "difficulty": 3
+    },
+    {
+        "id": 47,
+        "profileId": "TEC",
+        "category": "Testo Unico Edilizia",
+        "questionType": "knowledge",
+        "question": "Il permesso di costruire è disciplinato dal:",
+        "options": {
+            "A": "D.Lgs. 42/2004",
+            "B": "D.P.R. 380/2001 (Testo Unico Edilizia)",
+            "C": "D.Lgs. 152/2006",
+            "D": "L. 1150/1942"
+        },
+        "correctAnswer": "B",
+        "explanation": "Il permesso di costruire è disciplinato dagli artt. 10 e seguenti del D.P.R. 6 giugno 2001 n. 380 (Testo Unico delle disposizioni legislative e regolamentari in materia di edilizia).",
+        "source": "D.P.R. 380/2001",
+        "difficulty": 1
+    },
+    {
+        "id": 48,
+        "profileId": "TEC",
+        "category": "Testo Unico Edilizia",
+        "questionType": "knowledge",
+        "question": "La SCIA (Segnalazione Certificata di Inizio Attività) in ambito edilizio:",
+        "options": {
+            "A": "Sostituisce sempre il permesso di costruire",
+            "B": "È utilizzabile per interventi di manutenzione straordinaria e restauro",
+            "C": "Non necessita di un tecnico abilitato",
+            "D": "Ha validità illimitata"
+        },
+        "correctAnswer": "B",
+        "explanation": "La SCIA edilizia (art. 22 D.P.R. 380/2001) è utilizzabile per interventi di manutenzione straordinaria, restauro e risanamento conservativo, e ristrutturazione edilizia leggera.",
+        "source": "Art. 22 D.P.R. 380/2001",
+        "difficulty": 2
+    },
+    {
+        "id": 49,
+        "profileId": null,
+        "category": "Situazionale",
+        "questionType": "situational",
+        "question": "Il tuo superiore ti assegna un compito con una scadenza che ritieni irrealistica. Come ti comporti?",
+        "options": {
+            "A": "Accetti senza dire nulla e cerchi di completarlo, a costo di un lavoro approssimativo",
+            "B": "Esponi le tue perplessità al superiore, illustrando le criticità e proponendo una tempistica alternativa realistica",
+            "C": "Rifiuti il compito dichiarando che è impossibile",
+            "D": "Lo accetti ma lo consegni in ritardo senza avvisare"
+        },
+        "answerScores": {
+            "A": 0.375,
+            "B": 0.75,
+            "C": 0,
+            "D": 0
+        },
+        "explanation": "La risposta più efficace (B) è proattiva: comunica il problema e propone una soluzione. Accettare in silenzio (A) è parzialmente efficace. Rifiutare (C) e consegnare in ritardo senza avvisare (D) sono inefficaci.",
+        "difficulty": 2
+    },
+    {
+        "id": 50,
+        "profileId": null,
+        "category": "Situazionale",
+        "questionType": "situational",
+        "question": "Un nuovo collega ha difficoltà ad ambientarsi e sembra isolato dal gruppo. Come agisci?",
+        "options": {
+            "A": "Ti offri di aiutarlo, presentandolo ai colleghi e spiegandogli le procedure",
+            "B": "Non intervieni, deve cavarsela da solo",
+            "C": "Lo segnali al responsabile come 'poco integrato'",
+            "D": "Lo inviti fuori a pranzo ma non lo aiuti con il lavoro"
+        },
+        "answerScores": {
+            "A": 0.75,
+            "B": 0,
+            "C": 0,
+            "D": 0.375
+        },
+        "explanation": "Aiutare proattivamente il collega (A) è la risposta più efficace e dimostra spirito di team. Invitarlo socialmente (D) è parzialmente efficace. Non intervenire (B) o segnalarlo come problema (C) sono inefficaci.",
+        "difficulty": 1
+    }
+]
