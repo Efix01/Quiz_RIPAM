@@ -4,11 +4,8 @@ import { useAuth } from '../context/AuthProvider'
 import { Timer, AlertTriangle, CheckCircle2, XCircle, Trophy, RotateCcw, ChevronRight, BarChart3 } from 'lucide-react'
 import './Simulation.css'
 
-const TOTAL_QUESTIONS_PRO = 40;
-const TIME_LIMIT_SECONDS_PRO = 60 * 60; // 60 minuti
-
-const TOTAL_QUESTIONS_FREE = 20;
-const TIME_LIMIT_SECONDS_FREE = 20 * 60; // 20 minuti
+const TOTAL_QUESTIONS = 40
+const TIME_LIMIT_SECONDS = 60 * 60 // 60 minuti
 
 interface SimAnswer {
     questionId: number
@@ -28,14 +25,11 @@ export default function Simulation() {
     const [currentIdx, setCurrentIdx] = useState(0)
     const [answers, setAnswers] = useState<SimAnswer[]>([])
     const [selected, setSelected] = useState<string | null>(null)
-    const [timeLeft, setTimeLeft] = useState(TIME_LIMIT_SECONDS_FREE)
+    const [timeLeft, setTimeLeft] = useState(TIME_LIMIT_SECONDS)
     const [showFeedback, setShowFeedback] = useState(false)
     const timerRef = useRef<ReturnType<typeof setInterval> | null>(null)
 
     const profile = user?.selectedProfile ?? null
-    const isPro = user?.subscriptionTier === 'pro';
-    const currentLimitQuestions = isPro ? TOTAL_QUESTIONS_PRO : TOTAL_QUESTIONS_FREE;
-    const currentLimitTime = isPro ? TIME_LIMIT_SECONDS_PRO : TIME_LIMIT_SECONDS_FREE;
 
     const stopTimer = useCallback(() => {
         if (timerRef.current) {
@@ -69,12 +63,12 @@ export default function Simulation() {
         const available = questions.filter(q =>
             q.profileId === null || q.profileId === profile
         )
-        const shuffled = [...available].sort(() => Math.random() - 0.5).slice(0, currentLimitQuestions)
+        const shuffled = [...available].sort(() => Math.random() - 0.5).slice(0, TOTAL_QUESTIONS)
         setSimQuestions(shuffled)
         setAnswers([])
         setCurrentIdx(0)
         setSelected(null)
-        setTimeLeft(currentLimitTime)
+        setTimeLeft(TIME_LIMIT_SECONDS)
         setShowFeedback(false)
         setPhase('running')
     }
@@ -136,7 +130,7 @@ export default function Simulation() {
     const skippedCount = answers.filter(a => a.selected === null).length
 
     const getGrade = (score: number) => {
-        const max = currentLimitQuestions * 0.75
+        const max = TOTAL_QUESTIONS * 0.75
         const pct = (score / max) * 100
         if (pct >= 80) return { label: 'Eccellente', color: 'var(--color-accent-green)', icon: '🏆' }
         if (pct >= 65) return { label: 'Buono', color: 'var(--color-accent-blue)', icon: '✅' }
@@ -144,7 +138,7 @@ export default function Simulation() {
         return { label: 'Insufficiente', color: 'var(--color-accent-red)', icon: '📖' }
     }
 
-    const timeUsed = currentLimitTime - timeLeft
+    const timeUsed = TIME_LIMIT_SECONDS - timeLeft
     const isTimeCritical = timeLeft < 300 // ultimi 5 minuti
 
     if (loading) return <div className="loading-overlay">Caricamento domande…</div>
@@ -165,11 +159,11 @@ export default function Simulation() {
 
                 <div className="sim-intro__rules stagger-children">
                     <div className="sim-rule">
-                        <span className="sim-rule__num">{currentLimitQuestions}</span>
+                        <span className="sim-rule__num">40</span>
                         <span className="sim-rule__label">domande a risposta multipla</span>
                     </div>
                     <div className="sim-rule">
-                        <span className="sim-rule__num">{currentLimitTime / 60}'</span>
+                        <span className="sim-rule__num">60'</span>
                         <span className="sim-rule__label">di tempo massimo</span>
                     </div>
                     <div className="sim-rule">
@@ -185,13 +179,6 @@ export default function Simulation() {
                         <span className="sim-rule__label">risposta non data</span>
                     </div>
                 </div>
-
-                {!isPro && (
-                    <div className="sim-paywall-notice" style={{ marginTop: 'var(--space-md)', padding: 'var(--space-md)', background: 'var(--color-surface-hover)', borderRadius: 'var(--radius-lg)', border: '1px solid var(--border-color)', fontSize: 'var(--text-sm)', display: 'flex', alignItems: 'center', gap: 'var(--space-sm)' }}>
-                        <span>🔒</span>
-                        <p style={{ margin: 0 }}><strong>Modalità Free attiva.</strong> La simulazione è ridotta a 20 domande (20 min). Passa a PRO per sbloccare la simulazione completa reale (40 domande, 60 min).</p>
-                    </div>
-                )}
 
                 <button className="btn btn-primary btn-lg sim-intro__cta" onClick={startSimulation}>
                     Inizia Simulazione
@@ -231,13 +218,8 @@ export default function Simulation() {
                     <div className="sim-progress-bar__fill" style={{ width: `${progress}%` }} />
                 </div>
 
-                {/* Question and Reference Text */}
+                {/* Question */}
                 <div className="sim-question-wrap animate-fade-in-up">
-                    {q.referenceText && (
-                        <div className="sim-reference-text" style={{ padding: 'var(--space-md)', background: 'var(--color-surface-hover)', borderRadius: 'var(--radius-lg)', marginBottom: 'var(--space-md)', fontSize: '0.95rem', fontStyle: 'italic', borderLeft: '4px solid var(--color-accent-gold)' }}>
-                            {q.referenceText}
-                        </div>
-                    )}
                     <div className="sim-question">
                         <p className="sim-question__text">{q.question}</p>
                     </div>
@@ -310,7 +292,7 @@ export default function Simulation() {
                 <span className="sim-results__score" style={{ color: grade.color }}>
                     {Math.max(0, totalScore).toFixed(2)}
                 </span>
-                <span className="sim-results__score-label">punti / {(currentLimitQuestions * 0.75).toFixed(2)} max</span>
+                <span className="sim-results__score-label">punti / {(TOTAL_QUESTIONS * 0.75).toFixed(2)} max</span>
             </div>
 
             {/* Stats grid */}
@@ -345,7 +327,7 @@ export default function Simulation() {
                     <div
                         className="progress-bar__fill"
                         style={{
-                            width: `${Math.min(100, (Math.max(0, totalScore) / (currentLimitQuestions * 0.75)) * 100)}%`,
+                            width: `${Math.min(100, (Math.max(0, totalScore) / (TOTAL_QUESTIONS * 0.75)) * 100)}%`,
                             background: grade.color,
                             transition: 'width 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) 0.3s'
                         }}
@@ -353,7 +335,7 @@ export default function Simulation() {
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '6px' }}>
                     <span style={{ fontSize: 'var(--text-xs)', color: 'var(--color-text-muted)' }}>0</span>
-                    <span style={{ fontSize: 'var(--text-xs)', color: 'var(--color-text-muted)' }}>{currentLimitQuestions * 0.75} max</span>
+                    <span style={{ fontSize: 'var(--text-xs)', color: 'var(--color-text-muted)' }}>30 max</span>
                 </div>
             </div>
 

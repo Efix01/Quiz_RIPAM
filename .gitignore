@@ -1,6 +1,9 @@
-
-pdf/
-*.pdf
-pdf_parser.cjs
-extract_pdf.py
-inject_mock.cjs
+node_modules
+dist
+dist-ssr
+*.local
+.DS_Store
+._*
+.env
+.env.*
+!.env.example

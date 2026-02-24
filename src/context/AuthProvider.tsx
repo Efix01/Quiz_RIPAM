@@ -57,7 +57,6 @@ export function AuthProvider({ children }: { children: ReactNode }) {
                 email,
                 displayName: userData.displayName,
                 selectedProfile: userData.selectedProfile || null,
-                subscriptionTier: userData.subscriptionTier || 'free',
                 createdAt: userData.createdAt,
             }
 
@@ -87,7 +86,6 @@ export function AuthProvider({ children }: { children: ReactNode }) {
                 password, // In produzione sarà hashata via Supabase
                 displayName,
                 selectedProfile: null,
-                subscriptionTier: 'free',
                 createdAt: new Date().toISOString(),
             }
 
@@ -99,7 +97,6 @@ export function AuthProvider({ children }: { children: ReactNode }) {
                 email,
                 displayName,
                 selectedProfile: null,
-                subscriptionTier: 'free',
                 createdAt: newUser.createdAt,
             }
 

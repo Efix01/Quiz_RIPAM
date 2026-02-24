@@ -34,12 +34,6 @@ function StudyMode() {
 
     const profileId = user?.selectedProfile ?? null
     const categories = useMemo(() => getCategories(profileId), [getCategories, profileId])
-    const isPro = user?.subscriptionTier === 'pro';
-
-    // Mock: prime 2 materie gratis, le altre Pro. (Nella realtà sarà un flag DB)
-    const isCategoryFree = useCallback((idx: number) => {
-        return idx < 2;
-    }, []);
 
     const startStudy = useCallback((category: string | null) => {
         setSelectedCategory(category)
@@ -116,38 +110,20 @@ function StudyMode() {
                     <div className="category-chips stagger-children">
                         <button
                             className={`category-chip ${!selectedCategory ? 'category-chip--active' : ''}`}
-                            onClick={() => {
-                                if (!isPro) {
-                                    alert("Passa a PRO per studiare in modalità 'Tutte le materie' combinate!");
-                                    return;
-                                }
-                                startStudy(null);
-                            }}
+                            onClick={() => startStudy(null)}
                         >
-                            📚 Tutte le materie {!isPro && '🔒'}
+                            📚 Tutte le materie
                         </button>
 
-                        {categories.map((cat, idx) => {
-                            const freeAccess = isCategoryFree(idx);
-                            const locked = !isPro && !freeAccess;
-
-                            return (
-                                <button
-                                    key={cat}
-                                    className={`category-chip ${locked ? 'category-chip--locked' : ''}`}
-                                    onClick={() => {
-                                        if (locked) {
-                                            alert(`Materiale avanzato. Passa a PRO per sbloccare la materia: ${cat}`);
-                                            return;
-                                        }
-                                        startStudy(cat)
-                                    }}
-                                    style={locked ? { opacity: 0.6, cursor: 'not-allowed', borderColor: 'var(--border-color)', color: 'var(--color-text-muted)' } : {}}
-                                >
-                                    {cat} {locked && '🔒'}
-                                </button>
-                            );
-                        })}
+                        {categories.map(cat => (
+                            <button
+                                key={cat}
+                                className="category-chip"
+                                onClick={() => startStudy(cat)}
+                            >
+                                {cat}
+                            </button>
+                        ))}
                     </div>
                 </div>
             </div>
@@ -296,13 +272,6 @@ function StudyMode() {
                     <span className="badge badge-blue" style={{ marginBottom: 'var(--space-md)' }}>
                         Ragionamento logico
                     </span>
-                )}
-
-                {/* Testo di Riferimento (Brano) */}
-                {currentQuestion.referenceText && (
-                    <div className="quiz-reference-text" style={{ padding: 'var(--space-md)', background: 'var(--color-surface-hover)', borderRadius: 'var(--radius-lg)', marginBottom: 'var(--space-md)', fontSize: '0.95rem', fontStyle: 'italic', borderLeft: '4px solid var(--color-accent-gold)' }}>
-                        {currentQuestion.referenceText}
-                    </div>
                 )}
 
                 {/* Domanda */}

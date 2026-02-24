@@ -180,34 +180,26 @@ export default function Statistics() {
             {categoryStats.length > 0 && (
                 <div className="glass-card stats-categories">
                     <h3 className="stats-categories__title">Performance per Materia</h3>
-
-                    {!user || user.subscriptionTier === 'free' ? (
-                        <div className="sim-paywall-notice" style={{ marginTop: 'var(--space-md)', padding: 'var(--space-md)', background: 'var(--color-surface-hover)', borderRadius: 'var(--radius-lg)', border: '1px solid var(--border-color)', fontSize: 'var(--text-sm)', display: 'flex', alignItems: 'center', gap: 'var(--space-sm)' }}>
-                            <span style={{ fontSize: '24px' }}>🔒</span>
-                            <p style={{ margin: 0 }}><strong>Analisi Avanzata Bloccata.</strong> L'analisi granulare delle tue performance per materia è una funzione PRO. Sbloccala per sapere esattamente dove concentrare il tuo studio.</p>
-                        </div>
-                    ) : (
-                        <div className="stats-cat-list">
-                            {categoryStats.map(cat => (
-                                <div key={cat.name} className="stats-cat-row">
-                                    <div className="stats-cat-row__info">
-                                        <span className="stats-cat-row__name">{cat.name}</span>
-                                        <span className="stats-cat-row__seen">
-                                            {cat.seen}/{cat.total} viste
-                                        </span>
-                                    </div>
-                                    <div className="stats-cat-row__bar-wrap">
-                                        <div className="progress-bar" style={{ height: '6px' }}>
-                                            <div
-                                                className="progress-bar__fill"
-                                                style={{ width: `${cat.seenPct}%` }}
-                                            />
-                                        </div>
+                    <div className="stats-cat-list">
+                        {categoryStats.map(cat => (
+                            <div key={cat.name} className="stats-cat-row">
+                                <div className="stats-cat-row__info">
+                                    <span className="stats-cat-row__name">{cat.name}</span>
+                                    <span className="stats-cat-row__seen">
+                                        {cat.seen}/{cat.total} viste
+                                    </span>
+                                </div>
+                                <div className="stats-cat-row__bar-wrap">
+                                    <div className="progress-bar" style={{ height: '6px' }}>
+                                        <div
+                                            className="progress-bar__fill"
+                                            style={{ width: `${cat.seenPct}%` }}
+                                        />
                                     </div>
                                 </div>
-                            ))}
-                        </div>
-                    )}
+                            </div>
+                        ))}
+                    </div>
                 </div>
             )}
 

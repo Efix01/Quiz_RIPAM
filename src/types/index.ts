@@ -25,7 +25,6 @@ export interface QuizQuestion {
     category: string;               // materia (es. "Diritto amministrativo")
     subcategory?: string;
     questionType: QuestionType;
-    referenceText?: string;         // Testo/Brano di riferimento (per logica/ragionamento verbale)
     question: string;
     options: Record<string, string>; // {A: "...", B: "...", C: "...", D: "..."}
     correctAnswer?: string;         // per knowledge/logic (es. "A")
@@ -73,8 +72,6 @@ export interface SimulationResult {
     };
 }
 
-export type SubscriptionTier = 'free' | 'pro';
-
 /** Profilo utente (estende auth.users di Supabase) */
 export interface UserProfile {
     id: string;
@@ -85,7 +82,6 @@ export interface UserProfile {
     diplomaScore?: number;
     diplomaYear?: number;
     additionalTitles?: AdditionalTitle[];
-    subscriptionTier: SubscriptionTier;
     createdAt: string;
 }
 
